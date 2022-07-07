@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="codigo.js"></script>
+    <title>Encriptador de Texto</title>
+</head>
+<body class="body-principal">
+    <main class="principal-div">
+
+        <header>
+            <img src="./imágenes/Logo.png" alt="Logo" class="Logo">
+        </header>
+
+        <form class="div-textarea">
+            <textarea name="texto-area" id="texto-entrada"  class="texto-area" placeholder="Ingrese el texto aquí" oninput="validarTextarea(this)"></textarea>
+        </form>
+
+        <div class="controles">
+          <div class="advertencia">
+            <em><small>Solo letras minúsculas y sin acentos</small></em>
+          </div>
+
+          <div class="button">
+            <input type="button" class="button-codificar" value="Encriptar" />
+            <input type="button" class="button-decodificar" value="Desencriptar" />
+          </div>
+        </div>
+
+    </main>
+
+    <section class="barra-lateral">
+      <div id="info" class="info">
+  
+        <div class="info-img ">
+          <img src="imágenes/muñeco.png" />
+        </div>
+  
+        <div class="info-txt">
+          <strong>Ningún mensaje fue encontrado</strong><br />
+          <span> Ingresa el texto que desees encriptar o desencriptar</span>
+        </div>
+
+      </div>
+      
+      <div id="salida" class="salida-texto"></div>
+      <div >
+        <input id="copiar" type="button" class="button-copiar" value="copiar" hidden/>
+      </div>
+    
+
+      
+
+    </section>
+    <script src="js/codigo.js"></script>
+</body>
+</html>
